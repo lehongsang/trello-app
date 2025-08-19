@@ -1,0 +1,48 @@
+.card_container {
+
+    border-top-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.house_img {}
+
+.detail_link {
+
+    border-radius: 7px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+}
+.delete_btn {
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+.house_address {
+    width: 100px;
+    height: 100%;
+}
+.btn_container {
+    width: 200px;
+
+
+}
+.img_container {
+    height: 200px;
+    width: 300px;
+
+
+
+}

@@ -1,0 +1,74 @@
+.modal_container {
+    position: fixed;
+    width: 700px;
+    height: 500px;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 14;
+    background-color: #fff;
+    display: flex;
+
+    align-items:flex-start;
+    border-radius: 10px;
+    box-shadow: inset;
+   
+    flex-direction: column;
+    cursor: default;
+    padding-top: 70px;
+
+}
+
+.text_input:focus {
+    border-color: aqua;
+}
+
+.text_input {
+    outline: none;
+    width: 300px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+    height: 50px;
+    pointer-events: none;
+
+
+}
+
+.label {
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.btn_container {
+
+    display: flex;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+.submit_btn {
+   
+    border-radius: 7px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  
+}
+.cancle_btn {
+
+
+    margin-right: 30px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.1);
+    width: 85px;
+    height: 40px;
+    line-height: 40px;
+    
+}

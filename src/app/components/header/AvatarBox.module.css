@@ -1,0 +1,88 @@
+.vertical_center_align {
+
+  line-height: 80px;
+
+}
+
+.avatar_button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18)
+  
+}
+.avatar_button {
+
+  height: 45px;
+  cursor: pointer;
+}
+.user_ultil_container{
+  position: absolute;
+  background-color: #fff;
+  top: 80px;
+  right: 40%;
+  z-index: 10;
+  width: 250px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.user_ultil_container {
+
+  transition: 0.5s ease;
+  
+}
+.user_ultil_container::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5), 5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+.child::before {
+  content: "";
+  display: block;
+  width: 200px;
+  border-bottom-width: 1px;
+  border-color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+
+}
+
+.child {
+  line-height: 56px;
+  transition: 1.5s ease;
+  cursor: pointer;
+}
+
+.child:first-child::before {
+  border-bottom-width: 0;
+  
+}
+#username {
+   cursor: default;
+ 
+
+}
+.child:not(:first-of-type):hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+body:not(:focus-within) .user_ultil_container {
+  display: none;
+
+}
+.overlay {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+display: block;
+background-color: transparent;
+z-index: 9;
+}

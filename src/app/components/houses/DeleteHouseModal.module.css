@@ -1,0 +1,53 @@
+.delete_btn {
+
+    border-radius: 7px;
+    background-color: blue;
+    color: aliceblue;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cancel_btn {
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+.modal_container {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 14;
+    background-color: #fff;
+    display: flex;
+
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: inset;
+    justify-content: center;
+}
+
+.btn_container {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+
+
+}
+.text_line {
+    position: absolute;
+    top: 105px;
+    font-size: larger;
+    font-weight: 600;
+
+}

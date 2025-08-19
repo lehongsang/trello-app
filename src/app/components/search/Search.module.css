@@ -1,0 +1,175 @@
+.search_container {
+    max-width: 850px;
+    height: 100%;
+    margin: auto;
+    border-width: 2px;
+    border-radius: 35px;
+    box-shadow: unset;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    left: 50px;
+    z-index: 8;
+}
+
+
+.search_child {
+    width: 45%;
+    text-align: center;
+    height: 100%;
+    line-height: 62.8px;
+    position: relative;
+}
+
+.search_child_icon {
+    width: 10%;
+    text-align: center;
+    height: 100%;
+    line-height: 62.8px;
+    position: relative;
+}
+
+.search_icon {
+    border-width: 2px;
+    border-radius: 9999px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    right: 15px;
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.6);
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.search_icon:hover {
+
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+.address_container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    border-left-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.address_container {
+
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.address_input {
+    height: 40px;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    outline: none;
+    transition: 0.25s ease;
+
+}
+
+.address_input_label {
+    right: calc(50% + 15px);
+    position: absolute;
+    pointer-events: none;
+    bottom: 50%;
+    transform: translateY(50%);
+    height: 16px;
+    line-height: 16px;
+    z-index: 2;
+    transition: 0.25s ease;
+    width: 70px;
+
+}
+
+.price_input {
+    height: 40px;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.2);
+    width: 70px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    outline: none;
+    transition: 0.25s ease;
+    appearance: none;
+    margin: 0;
+
+}
+.price_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+.price_input_label {
+    left: 40px;
+    position: absolute;
+    pointer-events: none;
+    bottom: 50%;
+    transform: translateY(50%);
+    height: 16px;
+    line-height: 16px;
+
+    z-index: 2;
+    transition: 0.25s ease;
+    width: 40px;
+}
+
+.price_input:focus {
+
+    border-color: blueviolet;
+
+}
+
+.address_input:focus {
+
+    border-color: blueviolet;
+
+}
+
+.price_input:not(:placeholder-shown)+.price_input_label,
+.price_input:focus+.price_input_label {
+    left: 30px;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+}
+
+.address_input:not(:placeholder-shown)+.address_input_label,
+.address_input:focus+.address_input_label {
+    right: calc(50% + 20px);
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+}
+
+.input_label_container {
+
+    height: 40px;
+    width: 100%;
+
+}
+
